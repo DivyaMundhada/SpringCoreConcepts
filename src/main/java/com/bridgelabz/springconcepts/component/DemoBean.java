@@ -7,5 +7,4 @@ public class DemoBean {
 
 	public DemoBean() {
 	}
-
 }
