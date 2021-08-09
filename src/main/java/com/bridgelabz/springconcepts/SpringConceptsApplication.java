@@ -1,5 +1,5 @@
 /**
- * UC1 : Create a Project to learn Spring Concepts
+ * UC2 : Added Logger to Log Messages.
  *
  * @author : DIVYA MUNDHADA
  * @since : 09.08.2021
