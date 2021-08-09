@@ -1,5 +1,5 @@
 /**
- * UC1 : Create a Project to learn Spring Concepts
+ * UC3 : Demonstration of Dependency Injection
  *
  * @author : DIVYA MUNDHADA
  * @since : 09.08.2021
@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.bridgelabz.springconcepts.component.DemoBean;
+import com.bridgelabz.springconcepts.component.EmployeeBean;
 
 @SpringBootApplication
 public class SpringConceptsApplication {
@@ -24,5 +25,9 @@ public class SpringConceptsApplication {
 		System.out.println("Welcome to Spring Concept");
 		logger.debug("Checking Context: {}" + context.getBean(DemoBean.class));
 		logger.debug("\n*** Example Using @Autowire annotation on property ***");
+		EmployeeBean employeeBean = context.getBean(EmployeeBean.class);
+		employeeBean.setEid(104);
+		employeeBean.setEname("Spring Framework Guru");
+		employeeBean.showEmployeeDetails();
 	}
 }
